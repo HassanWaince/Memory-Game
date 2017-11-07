@@ -10,7 +10,7 @@ class MemoryGame:
     def __init__(self, main):
         self.main = main  # creating a 2 d list
         self.buttons = [[tk.Button(root,
-                                   width=4,  # setting the with of the buttons
+                                   width=4,  # setting the width of the buttons
                                    height=2,  # setting the height of the buttons
                                    bg='lightblue',
                                    bd=5,
