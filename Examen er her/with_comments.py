@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import \
-    messagebox  # we have to import the message box as it is not aytomatically imported when we # imported tkinter.
+    messagebox  # we have to import the message box as it is not automatically imported when we # imported tkinter.
 import random
 import time
 import string
@@ -55,14 +55,14 @@ class MemoryGame:
                 self.key[row][column] = ''  # resetting the tile (removing the key in the tile to blank(string))
                 self.key[a][b] = ''  # resetting the tile (removing the key in the tile to blank(string))
                 if not any(''.join(row) for row in self.key):  # if all keys are blank(string's), the game is over
-                    total_time = time.monotonic() - self.starting_time  # substracting the starting time from the time now to show how much time spent.
+                    total_time = time.monotonic() - self.starting_time  #substracting the starting time from the time now to show how much time spent.
                     messagebox.showinfo(title='Finished!',
                                         message='You did it, congrats!, Your time was: {:.1f}\'s'  # showing the time in seconds within the message :)
                                         .format(total_time))  # shows this message box when the above statement is true.
                     self.main.after(1000, self.create_board())  # creates a new board after 5 seconds.
             else:
                 self.main.after(2000, self.reset_tiles, row, column, a,
-                                b)  # after method places a call in the scheduler , and says after stated time run this. not recursive, each call is seperate.
+                                b)  # after method places a call in the scheduler , and says; after stated time run this. Not recursive, each call is seperate.
             self.first = None
 
     def reset_tiles(self, x1, y1, x2,
