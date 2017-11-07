@@ -16,7 +16,7 @@ class MemoryGame:
                                    bd=5,
                                    command=lambda row=row, column=column: self.tile_choice(row, column)
                                    ) for column in range(4)] for row in range(
-            4)]  # nested list for each row, with 4 columns in each row, also used lambda to create an anonymous in line function
+            4)]  # nested list for each row, width 4 columns in each row, also used lambda to create an anonymous in line function
         for row in range(4):  # Placing the rows and columns in a grid
             for column in range(4):
                 self.buttons[row][column].grid(row=row, column=column)
