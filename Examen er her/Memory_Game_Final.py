@@ -3,7 +3,7 @@ from tkinter import messagebox
 import random
 import time
 import string
-#Examen innlevering Hassan Waince Memory Game
+
 
 class MemoryGame:
     def __init__(self, main):
